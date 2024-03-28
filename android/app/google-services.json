@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797097786782",
+    "project_id": "samplepn-38df5",
+    "storage_bucket": "samplepn-38df5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797097786782:android:b0ceead48bdde767162a8f",
+        "android_client_info": {
+          "package_name": "com.samplepn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDusnIKjMYkbD0hdH87gcHy5tCqL3ccKdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
