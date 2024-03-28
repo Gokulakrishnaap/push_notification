@@ -8,13 +8,13 @@ importScripts('https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js')
 // your app's Firebase config object.
 // https://firebase.google.com/docs/web/setup#config-object
 firebase.initializeApp({
-    apiKey: "AIzaSyDbSQNu57gVL-ZVy8uJr5E9S9OVu6Phicc",
-    authDomain: "pushnotification-ff161.firebaseapp.com",
-    projectId: "pushnotification-ff161",
-    storageBucket: "pushnotification-ff161.appspot.com",
-    messagingSenderId: "833480362027",
-    appId: "1:833480362027:web:277eb0f76ad877808b426e",
-    measurementId: "G-07KS8F7FB9"
+    // apiKey: "AIzaSyDbSQNu57gVL-ZVy8uJr5E9S9OVu6Phicc",
+    // authDomain: "pushnotification-ff161.firebaseapp.com",
+    // projectId: "pushnotification-ff161",
+    // storageBucket: "pushnotification-ff161.appspot.com",
+    // messagingSenderId: "833480362027",
+    // appId: "1:833480362027:web:277eb0f76ad877808b426e",
+    // measurementId: "G-07KS8F7FB9"
 });
 
 // Retrieve an instance of Firebase Messaging so that it can handle background
