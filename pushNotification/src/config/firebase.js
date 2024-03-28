@@ -32,7 +32,9 @@ export const generateToken = async() => {
             vapidKey: VAPID_KEY
         });
         console.log('token', token);
+        return token;
     }else{
         console.log('permission denied');
+        return null;
     }
 }

@@ -21,10 +21,34 @@ function App() {
       progress: undefined,
       theme: "light",
     });
-  } 
+  }; 
+
+  const onSendNotification = async(token) => {
+    const payload = {
+      token: token,
+      title: 'Hello World',
+      body: 'This is a notification from DOTNET Firebase',
+    };
+    const response = await fetch('https://localhost:7059/send', {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json"
+    } ,
+      body: JSON.stringify(payload),
+    });
+    const data = await response.json();
+    console.log('Success data', data);
+  }
 
   useEffect(() => {
-    generateToken();
+    generateToken()
+    .then((token) => {
+      if(token){
+        console.log('targetDeviceToken', token);
+        onSendNotification(token);
+      }
+    })
+    .catch((err) => console.log('error', err));
 
     // When the app is open, we receive the message in onMessage Method
     onMessage(messaging, (payload) => {
