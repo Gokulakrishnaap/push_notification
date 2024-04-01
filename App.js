@@ -16,6 +16,7 @@ const App = () => {
     }
 }
 
+// get a token in console
 const getToken = async() =>{
   const token = await messaging().getToken()
   console.log("Token = " ,token)
