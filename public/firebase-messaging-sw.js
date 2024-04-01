@@ -3,13 +3,22 @@ importScripts(
   "https://www.gstatic.com/firebasejs/8.10.1/firebase-messaging.js"
 );
 
+import {
+  API_KEY,
+  AUTH_DOMAIN,
+  PROJECT_ID,
+  STORAGE_BUCKET,
+  MESSAGING_SENDERID,
+  APP_ID,
+} from "../src/utils/config";
+
 firebase.initializeApp({
-  apiKey: "AIzaSyBOfnU7eWk2rFmetruNz8IQObQhLFM3FUY",
-  authDomain: "rt-push-notification-322b6.firebaseapp.com",
-  projectId: "rt-push-notification-322b6",
-  storageBucket: "rt-push-notification-322b6.appspot.com",
-  messagingSenderId: "414784846511",
-  appId: "1:414784846511:web:5cb96b288efa55465a725a",
+  apiKey: API_KEY,
+  authDomain: AUTH_DOMAIN,
+  projectId: PROJECT_ID,
+  storageBucket: STORAGE_BUCKET,
+  messagingSenderId: MESSAGING_SENDERID,
+  appId: APP_ID,
 });
 
 const messaging = firebase.messaging();
